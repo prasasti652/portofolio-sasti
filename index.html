@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sasti</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Sasti<span>.</span></h2>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p class="hello">Hello, I'm</p>
+            <h1>Prasasti</h1>
+            <h3>Student & <span>Web Leaner</span></h3>
+
+            <p>
+                Saya adalah pelajar SMK jurusan PPLG yang tertarik
+                dengan dunia pemrograman, desain, dan teknologi.
+            </p>
+
+            <a href="#projects" class="btn">Lihat Project</a>
+        </div>
+
+        <div class="hero-image">
+            <div class="circle">
+                <img src="assets/images/foto profil.jpeg" alt="Foto Profil">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2 class="title">About Me</h2>
+
+        <div class="about-content">
+            <div>
+                <h3>Tentang Saya</h3>
+                <p>
+                    Saya merupakan siswa SMK jurusan Pengembangan
+                    Perangkat Lunak dan Gim (PPLG). Saya sedang
+                    belajar membuat website dan aplikasi menggunakan
+                    HTML, CSS, JavaScript, serta bahasa pemrograman lainnya.
+                </p>
+            </div>
+
+            <div class="info">
+                <p><b>Nama:</b> Prasasti</p>
+                <p><b>Status:</b> Pelajar</p>
+                <p><b>Jurusan:</b> PPLG2</p>
+                <p><b>Fokus:</b> Web Leaner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+        <h2 class="title">My Skills</h2>
+
+        <div class="skills">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar html"></div>
+                </div>
+                <p>90%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar css"></div>
+                </div>
+                <p>80%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar js"></div>
+                </div>
+                <p>70%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Java</h3>
+                <div class="progress">
+                    <div class="progress-bar java"></div>
+                </div>
+                <p>65%</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2 class="title">My Projects</h2>
+
+        <div class="projects">
+
+            <!-- PROJECT 1 : PASKIBRA -->
+            <div class="project-card">
+                <img src="assets/images/paskibra.jpg" alt="Kegiatan Paskibra">
+
+                <div class="project-content">
+                    <h3>Kegiatan Paskibra</h3>
+
+                    <p>
+                        Kegiatan Paskibra yang menjadi pengalaman
+                        dalam melatih kedisiplinan, kekompakan,
+                        tanggung jawab, dan kerja sama.
+                    </p>
+
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 : MENARI -->
+            <div class="project-card">
+                <img src="assets/images/nari.jpg" alt="Kegiatan Menari">
+
+                <div class="project-content">
+                    <h3>Kegiatan Menari</h3>
+
+                    <p>
+                        Kegiatan menari sebagai pengalaman dalam
+                        mengembangkan kreativitas, keberanian,
+                        kekompakan, dan kemampuan dalam bidang seni.
+                    </p>
+
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+           <!-- PROJECT 3 : MEMASAK -->
+<div class="project-card">
+    <img src="assets/images/masak.jpg" alt="Kegiatan Memasak">
+
+    <div class="project-content">
+        <h3>Kegiatan Memasak</h3>
+
+        <p>
+            Kegiatan memasak sebagai salah satu aktivitas
+            yang melatih kreativitas, keterampilan, dan
+            kemandirian dalam mengolah berbagai makanan.
+        </p>
+
+        <a href="#" class="project-btn">View Project</a>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+<section id="contact" class="section contact">
+    <h2 class="title">Contact Me</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Nama kamu..." required>
+
+        <input type="email" id="email" placeholder="Email kamu..." required>
+
+        <textarea
+            id="message"
+            rows="5"
+            placeholder="Pesan kamu..."
+            required>
+        </textarea>
+
+        <button type="submit" class="btn">
+            Kirim Pesan
+        </button>
+    </form>
+
+    <!-- Social Media -->
+<div class="social-media">
+    <h3>Hubungi Saya</h3>
+
+    <div class="social-container">
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/zahr.asukamelon?igsi=YXNzMTh1NDVkZDBt"
+           target="_blank"
+           class="social-card instagram">
+
+            <div class="social-icon">
+                <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram">
+            </div>
+
+            <div class="social-info">
+                <h3>Instagram</h3>
+                <p>@zahr.asukamelon</p>
+            </div>
+
+        </a>
+
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6281368280758"
+           target="_blank"
+           class="social-card whatsapp">
+
+            <div class="social-icon">
+                <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp">
+            </div>
+
+            <div class="social-info">
+                <h3>WhatsApp</h3>
+                <p>081368280758</p>
+            </div>
+
+        </a>
+
+
+        <!-- Gmail -->
+        <a href="mailto:sastiprasasti96@gmail.com"
+           class="social-card gmail">
+
+            <div class="social-icon">
+                <img src="https://cdn.simpleicons.org/gmail/ffffff" alt="Gmail">
+            </div>
+
+            <div class="social-info">
+                <h3>Gmail</h3>
+                <p>sastiprasasti96@gmail.com</p>
+            </div>
+
+        </a>
+
+    </div>
+</div>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sasti Prasasti. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
